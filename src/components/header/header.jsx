@@ -1,16 +1,18 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import Me from '../../assets/portfolio1.jpg'
+import Me from '../../assets/me.jpg'
+import HeaderSocial from './HeaderSocials'
 
-const header = () => {
+const Header = () => {
   return (
     <header>
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Derrick Mwema</h1>
-        <h5 className="text-light">Full-stack Developer</h5>
+        <h5>Full-stack Developer</h5>
         <CTA />
+        <HeaderSocial />
         <div className="me">
           <img src={Me} alt="me"/>
 
@@ -21,4 +23,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
